@@ -8,13 +8,13 @@ python createGraph.py
 ```
 Then, create a results folder, and run:
 ```
-python -m solver.PageRankSolver
+python -m solvers.PageRankSolver
 ```
 ```
-python -m solver.randomWalkerSolver
+python -m solvers.randomWalkerSolver
 ```
 ```
-python -m solver.simpleSolver
+python -m solvers.simpleSolver
 ```
 
 ## To run Mininet simulation of Distributed Pagerank Algorithm
