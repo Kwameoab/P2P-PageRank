@@ -33,15 +33,15 @@ class InternetGraph ():
         self.json_file = args.file_name
         self.subgraph = args.subgraph
 
-    def generate(self):
+    def generate(self, in_deg, out_deg):
         for i in range(self.node_count):
             self.node_list.append(Node(f"Node_{i}"))
 
         in_weights = [0, 0]
         out_weights = [0, 0]
         for i in range(2, self.node_count):
-            in_weights.append(1/(i**2.1))
-            out_weights.append(1/(i**2.4))
+            in_weights.append(1/(i**in_deg))
+            out_weights.append(1/(i**out_deg))
 
         in_weights_sum = sum(in_weights)
         in_weights[0] = (1 - in_weights_sum) * 0.25
@@ -51,7 +51,6 @@ class InternetGraph ():
 
         out_weights_sum = sum(out_weights)
         out_weights[0] = (1 - out_weights_sum) * 0.25
-        # out_weights[1] = (1 - out_weightsSum) * 0.75
         out_weights[1] = 1 - sum(out_weights)
         self.logger.debug(
             f"This is out weight distribution total {sum(out_weights)} it should equal 1")
@@ -160,7 +159,7 @@ def main():
 
         # now invoke the driver program
         logger.debug("Main: Create the graph")
-        graph.generate()
+        graph.generate(args.in_deg, args.out_deg)
 
 
     except Exception as e:

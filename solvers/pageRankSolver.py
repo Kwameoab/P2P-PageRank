@@ -8,7 +8,7 @@ class PageRankSolver():
         self.in_file = in_file
         self.out_file = f"results/{out_file}"
 
-    def solve(self):
+    def solve(self, alpha):
         graph_list = []
         nx_dict = {}
 
@@ -23,14 +23,18 @@ class PageRankSolver():
             nx_dict[str(node["name"])] = outList
 
         nx_graph = nx.from_dict_of_lists(nx_dict, create_using=nx.DiGraph())
+        pageRankAnswer = nx.pagerank(nx_graph, alpha=alpha)
 
         with open(self.out_file, "w") as f:
-            json.dump(nx.pagerank(nx_graph), f, indent=4)
+            json.dump(pageRankAnswer, f, indent=4)
 
 
 def parse():
     parser = argparse.ArgumentParser(
         description="Solve Graph with NX method")
+    
+    parser.add_argument("-d", "--dampingFactor", type=float,
+                        default=0.85, help="The damping factor or alpha for solver (ideally betweent 0.8 to 1.0)")
 
     parser.add_argument("-f", "--file_name", type=str,
                         default="graph.json", help="Input file for the graph")
@@ -46,7 +50,7 @@ def main():
         args = parse()
 
         solver = PageRankSolver(args.file_name, args.out_file_name)
-        solver.solve()
+        solver.solve(args.dampingFactor)
 
     except Exception as e:
         print("Exception caught in main - {}".format(e))

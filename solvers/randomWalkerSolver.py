@@ -14,11 +14,11 @@ class PageRankSolver():
     def flip(self, prob):
         return np.random.random() < prob
 
-    def solve(self, iter, damping):
+    def solve(self, iter, alpha):
         curr_node = np.random.choice(self.pr_graph)
 
         for _ in range(iter):
-            if self.flip(damping):
+            if self.flip(alpha):
                 if len(curr_node.outward_nodes) == 0:
                     curr_node = np.random.choice(self.pr_graph)
                 else:
@@ -49,6 +49,9 @@ def parse():
 
     parser.add_argument("-i", "--iter", type=int,
                         default=1000, help="The amount of iterations")
+    
+    parser.add_argument("-d", "--dampingFactor", type=float,
+                        default=0.85, help="The damping factor or alpha for solver (ideally betweent 0.8 to 1.0)")
 
     parser.add_argument("-f", "--file_name", type=str,
                         default="graph.json", help="Input file for the graph")
@@ -65,7 +68,7 @@ def main():
         args = parse()
 
         solver = PageRankSolver(args.file_name)
-        solver.solve(args.iter, 0.85)
+        solver.solve(args.iter, args.dampingFactor)
 
         solver.export(args.out_file_name)
 

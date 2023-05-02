@@ -8,9 +8,9 @@ class PageRankSolver ():
     def __init__(self, json_file):
         self.pr_graph = convert_to_page_graph(json_file)
 
-    def solve(self, iter):
+    def solve(self, iter, alpha):
         for i in range(iter):
-            self.one_iteration(0.85)
+            self.one_iteration(alpha)
             self.normalize_page_rank()
 
     def one_iteration(self, damping):
@@ -56,6 +56,9 @@ def parse():
 
     parser.add_argument("-i", "--iter", type=int,
                         default=1000, help="The amount of iterations")
+    
+    parser.add_argument("-d", "--dampingFactor", type=float,
+                        default=0.85, help="The damping factor or alpha for solver (ideally betweent 0.8 to 1.0)")
 
     parser.add_argument("-f", "--file_name", type=str,
                         default="graph.json", help="Input file for the graph")
@@ -71,7 +74,7 @@ def main():
         args = parse()
 
         solver = PageRankSolver(args.file_name)
-        solver.solve(args.iter)
+        solver.solve(args.iter, args.dampingFactor)
 
         solver.export(args.out_file_name)
 
