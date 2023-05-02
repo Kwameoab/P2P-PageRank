@@ -1,7 +1,6 @@
 import json
 import argparse
 from utils import convert_to_page_graph
-
 # code inspired by: https://github.com/chonyy/page_rank-HITS-SimRank/tree/675414a5c74d804a77869723f964f2aa3b58a53b
 
 
