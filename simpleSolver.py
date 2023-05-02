@@ -1,96 +1,67 @@
 import json
 import argparse
+from utils import convert_to_page_graph
 
-# code inspired by: https://github.com/chonyy/PageRank-HITS-SimRank/tree/675414a5c74d804a77869723f964f2aa3b58a53b
-
-
-class PageNode ():
-    def __init__(self, name):
-        self.name = name
-        self.inwardNodes = []
-        self.outwardNodes = []
-        self.pageRank = 1
+# code inspired by: https://github.com/chonyy/page_rank-HITS-SimRank/tree/675414a5c74d804a77869723f964f2aa3b58a53b
 
 
 class PageRankSolver ():
-    def __init__(self, jsonFile):
-        self.prGraph = self.convertToPageGraph(jsonFile)
-
-    def convertToPageGraph(self, jsonFile):
-        graphList = []
-        pageGraphList = []
-
-        with open(jsonFile, "r") as f:
-            graphList = json.load(f)
-
-        for node in graphList:
-            pageGraphList.append(PageNode(node["name"]))
-
-        for index, node in enumerate(graphList):
-            for inNode in node["inwardLinks"]:
-                inIndex = int(str(inNode).split("_")[-1])
-                pageGraphList[index].inwardNodes.append(pageGraphList[inIndex])
-
-            for outNode in node["outwardLinks"]:
-                outIndex = int(str(outNode).split("_")[-1])
-                pageGraphList[index].outwardNodes.append(
-                    pageGraphList[outIndex])
-
-        return pageGraphList
+    def __init__(self, json_file):
+        self.pr_graph = convert_to_page_graph(json_file)
 
     def solve(self, iter):
         for i in range(iter):
-            self.oneIteration(0.85)
-            self.normalizePageRank()
+            self.one_iteration(0.85)
+            self.normalize_page_rank()
 
-    def oneIteration(self, damping):
-        for node in self.prGraph:
-            self.updatePageRank(node, node.inwardNodes,
-                                damping, len(self.prGraph))
+    def one_iteration(self, damping):
+        for node in self.pr_graph:
+            self.update(node, node.inward_nodes,
+                                damping, len(self.pr_graph))
 
-    def updatePageRank(self, node, inwardNodes, damping, totalNodes):
-        pageRankSum = 0
-        for inNode in inwardNodes:
-            outDeg = max(1, len(inNode.outwardNodes))
-            pageRankSum += (inNode.pageRank / outDeg)
+    def update(self, node, inward_nodes, damping, total_nodes):
+        page_rank_sum = 0
+        for in_node in inward_nodes:
+            out_degree = max(1, len(in_node.outward_nodes))
+            page_rank_sum += (in_node.page_rank / out_degree)
 
-        randomWalk = (1 - damping) / totalNodes
-        node.pageRank = randomWalk + damping * pageRankSum
+        random_walk = (1 - damping) / total_nodes
+        node.page_rank = random_walk + damping * page_rank_sum
 
-    def normalizePageRank(self):
-        pageRankSum = 0
+    def normalize_page_rank(self):
+        page_rank_sum = 0
 
-        for node in self.prGraph:
-            pageRankSum += node.pageRank
+        for node in self.pr_graph:
+            page_rank_sum += node.page_rank
 
-        for node in self.prGraph:
-            node.pageRank = node.pageRank / pageRankSum
+        for node in self.pr_graph:
+            node.page_rank = node.page_rank / page_rank_sum
 
-    def export(self, fileName):
-        sumTotal = 0
-        exportJson = {}
+    def export(self, file_name):
+        total = 0
+        json_dict = {}
 
-        for node in self.prGraph:
-            sumTotal += node.pageRank
+        for node in self.pr_graph:
+            total += node.page_rank
 
-        for node in self.prGraph:
-            exportJson[node.name] = node.pageRank / sumTotal
+        for node in self.pr_graph:
+            json_dict[node.name] = node.page_rank / total
 
-        with open(f"results/{fileName}", "w") as f:
-            json.dump(exportJson, f, indent=4)
+        with open(f"results/{file_name}", "w") as f:
+            json.dump(json_dict, f, indent=4)
 
 
-def parseCmdLineArgs():
+def parse():
     parser = argparse.ArgumentParser(
         description="Solve Graph with simple solver method")
 
     parser.add_argument("-i", "--iter", type=int,
                         default=1000, help="The amount of iterations")
 
-    parser.add_argument("-f", "--fileName", type=str,
+    parser.add_argument("-f", "--file_name", type=str,
                         default="graph.json", help="Input file for the graph")
 
-    parser.add_argument("-of", "--outFileName", type=str,
+    parser.add_argument("-of", "--out_file_name", type=str,
                         default="result_simple.json", help="Output file after solving")
 
     return parser.parse_args()
@@ -98,12 +69,12 @@ def parseCmdLineArgs():
 
 def main():
     try:
-        args = parseCmdLineArgs()
+        args = parse()
 
-        solver = PageRankSolver(args.fileName)
+        solver = PageRankSolver(args.file_name)
         solver.solve(args.iter)
 
-        solver.export(args.outFileName)
+        solver.export(args.out_file_name)
 
     except Exception as e:
         print("Exception caught in main - {}".format(e))

@@ -2,7 +2,7 @@ import json
 import argparse
 from collections import Counter
 import numpy as np
-from utils import PageNode, convert_to_page_graph
+from utils import convert_to_page_graph
 
 # code inspired by: https://allendowney.github.io/DSIRP/pagerank.html#random-walk
 
@@ -19,10 +19,10 @@ class PageRankSolver():
 
         for _ in range(iter):
             if self.flip(damping):
-                if len(curr_node.outwardNodes) == 0:
+                if len(curr_node.outward_nodes) == 0:
                     curr_node = np.random.choice(self.pr_graph)
                 else:
-                    curr_node = np.random.choice(curr_node.outwardNodes)
+                    curr_node = np.random.choice(curr_node.outward_nodes)
             else:
                 curr_node = np.random.choice(self.pr_graph)
 

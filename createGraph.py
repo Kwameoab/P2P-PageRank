@@ -78,9 +78,9 @@ class InternetGraph ():
 
             entry = {
                 "name": node.name,
-                "inwardLinks": in_list,
-                "outwardLinks": out_list,
-                "subgraph": random.randint(0, self.subgraph)
+                "inward_links": in_list,
+                "outward_links": out_list,
+                "subgraph": random.randint(1, self.subgraph)
             }
             
             final_graph.append(entry)
