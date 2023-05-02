@@ -8,98 +8,103 @@ import logging
 import argparse
 import random
 import json
+import random
 
 
 class Node:
     def __init__(self, name):
         self.name = name
-        self.inNodes = []  # nodes that point inward towards me
-        self.outNodes = []  # ndoes I point outward to
+        self.in_nodes = []  # nodes that point inward towards me
+        self.out_nodes = []  # ndoes I point outward to
         
 
 class InternetGraph ():
 
     def __init__(self, logger):
         self.logger = logger
-        self.nodeList = []
-        self.nodeCount = 0
-        self.jsonFile = ""
+        self.node_list = []
+        self.node_count = 0
+        self.json_file = ""
 
     def configure(self, args):
         self.logger.debug("InternetGraph::configure")
 
-        self.nodeCount = args.number
-        self.jsonFile = args.fileName
+        self.node_count = args.number
+        self.json_file = args.file_name
+        self.subgraph = args.subgraph
 
     def generate(self):
-        for i in range(self.nodeCount):
-            self.nodeList.append(Node(f"Node_{i}"))
+        for i in range(self.node_count):
+            self.node_list.append(Node(f"Node_{i}"))
 
-        inWeights = [0, 0]
-        outWeights = [0, 0]
-        for i in range(2, self.nodeCount):
-            inWeights.append(1/(i**2.1))
-            outWeights.append(1/(i**2.4))
+        in_weights = [0, 0]
+        out_weights = [0, 0]
+        for i in range(2, self.node_count):
+            in_weights.append(1/(i**2.1))
+            out_weights.append(1/(i**2.4))
 
-        inWeightsSum = sum(inWeights)
-        inWeights[0] = (1 - inWeightsSum) * 0.25
-        inWeights[1] = 1 - sum(inWeights)
+        in_weights_sum = sum(in_weights)
+        in_weights[0] = (1 - in_weights_sum) * 0.25
+        in_weights[1] = 1 - sum(in_weights)
         self.logger.debug(
-            f"This is in weight distribution total {sum(inWeights)} it should equal 1")
+            f"This is in weight distribution total {sum(in_weights)} it should equal 1")
 
-        outWeightsSum = sum(outWeights)
-        outWeights[0] = (1 - outWeightsSum) * 0.25
-        # outWeights[1] = (1 - outWeightsSum) * 0.75
-        outWeights[1] = 1 - sum(outWeights)
+        out_weights_sum = sum(out_weights)
+        out_weights[0] = (1 - out_weights_sum) * 0.25
+        # out_weights[1] = (1 - out_weightsSum) * 0.75
+        out_weights[1] = 1 - sum(out_weights)
         self.logger.debug(
-            f"This is out weight distribution total {sum(outWeights)} it should equal 1")
+            f"This is out weight distribution total {sum(out_weights)} it should equal 1")
 
-        for i in range(self.nodeCount):
-            inCount = random.choices(range(self.nodeCount), inWeights)[0]
-            outCount = random.choices(range(self.nodeCount), outWeights)[0]
+        for i in range(self.node_count):
+            in_count = random.choices(range(self.node_count), in_weights)[0]
+            out_count = random.choices(range(self.node_count), out_weights)[0]
 
-            self.in_connect(self.nodeList[i], inCount)
+            self.in_connect(self.node_list[i], in_count)
 
-            if len(self.nodeList[i].outNodes) < outCount:
-                remainingOutCount = outCount - len(self.nodeList[i].outNodes) 
-                self.out_connect(self.nodeList[i], remainingOutCount)
+            if len(self.node_list[i].out_nodes) < out_count:
+                remainingout_count = out_count - len(self.node_list[i].out_nodes) 
+                self.out_connect(self.node_list[i], remainingout_count)
 
-        finalGraph = []
-        for node in self.nodeList:
-            inwardList = []
-            for inNode in node.inNodes:
-                inwardList.append(inNode.name)
+        final_graph = []
+        for node in self.node_list:
+            in_list = []
+            for in_node in node.in_nodes:
+                in_list.append(in_node.name)
 
-            outwardList = []
-            for outNode in node.outNodes:
-                outwardList.append(outNode.name)
+            out_list = []
+            for out_node in node.out_nodes:
+                out_list.append(out_node.name)
 
             entry = {
                 "name": node.name,
-                "inwardLinks": inwardList,
-                "outwardLinks": outwardList
+                "inwardLinks": in_list,
+                "outwardLinks": out_list,
+                "subgraph": random.randint(0, self.subgraph)
             }
-            finalGraph.append(entry)
+            
+            final_graph.append(entry)
 
-        with open(self.jsonFile, "w") as f:
-            json.dump(finalGraph, f, indent=4)
 
-    def in_connect(self, node, inCount):
-        for i in range(inCount):
+        with open(self.json_file, "w") as f:
+            json.dump(final_graph, f, indent=4)
+
+    def in_connect(self, node, in_count):
+        for i in range(in_count):
             while True:
-                nodeToConnect = random.choice(self.nodeList)
-                if nodeToConnect not in node.inNodes and nodeToConnect != node:
-                    node.inNodes.append(nodeToConnect)
-                    nodeToConnect.outNodes.append(node)
+                node_to_connect = random.choice(self.node_list)
+                if node_to_connect not in node.in_nodes and node_to_connect != node:
+                    node.in_nodes.append(node_to_connect)
+                    node_to_connect.out_nodes.append(node)
                     break
 
-    def out_connect(self, node, outCount):
-        for i in range(outCount):
+    def out_connect(self, node, out_count):
+        for i in range(out_count):
             while True:
-                nodeToConnect = random.choice(self.nodeList)
-                if nodeToConnect not in node.outNodes and nodeToConnect != node:
-                    node.outNodes.append(nodeToConnect)
-                    nodeToConnect.inNodes.append(node)
+                node_to_connect = random.choice(self.node_list)
+                if node_to_connect not in node.out_nodes and node_to_connect != node:
+                    node.out_nodes.append(node_to_connect)
+                    node_to_connect.in_nodes.append(node)
                     break
 
 
@@ -119,8 +124,11 @@ def parseCmdLineArgs():
     parser.add_argument("-l", "--loglevel", type=int, default=logging.INFO, choices=[
                         logging.DEBUG, logging.INFO, logging.WARNING, logging.ERROR, logging.CRITICAL], help="logging level, choices 10,20,30,40,50: default 10=logging.DEBUG")
 
-    parser.add_argument("-f", "--fileName", type=str,
+    parser.add_argument("-f", "--file_name", type=str,
                         default="graph.json", help="Output file for the graph")
+    
+    parser.add_argument("-s", "--subgraph", type=int,
+                        default=5, help="Number of subgraphs to randomly divide nodes into")
 
     return parser.parse_args()
 
@@ -153,6 +161,7 @@ def main():
         # now invoke the driver program
         logger.debug("Main: Create the graph")
         graph.generate()
+
 
     except Exception as e:
         logger.error("Exception caught in main - {}".format(e))

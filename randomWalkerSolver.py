@@ -2,76 +2,47 @@ import json
 import argparse
 from collections import Counter
 import numpy as np
+from utils import PageNode, convert_to_page_graph
 
 # code inspired by: https://allendowney.github.io/DSIRP/pagerank.html#random-walk
 
-
-class PageNode ():
-    def __init__(self, name):
-        self.name = name
-        self.inwardNodes = []
-        self.outwardNodes = []
-
-
-class PageRankSolver ():
-    def __init__(self, jsonFile):
-        self.prGraph = self.convertToPageGraph(jsonFile)
-        self.pageRankCounter = Counter()
-
-    def convertToPageGraph(self, jsonFile):
-        graphList = []
-        pageGraphList = []
-
-        with open(jsonFile, "r") as f:
-            graphList = json.load(f)
-
-        for node in graphList:
-            pageGraphList.append(PageNode(node["name"]))
-
-        for index, node in enumerate(graphList):
-            for inNode in node["inwardLinks"]:
-                inIndex = int(str(inNode).split("_")[-1])
-                pageGraphList[index].inwardNodes.append(pageGraphList[inIndex])
-
-            for outNode in node["outwardLinks"]:
-                outIndex = int(str(outNode).split("_")[-1])
-                pageGraphList[index].outwardNodes.append(
-                    pageGraphList[outIndex])
-
-        return pageGraphList
+class PageRankSolver():
+    def __init__(self, json_file):
+        self.pr_graph = convert_to_page_graph(json_file)
+        self.page_rank_counter = Counter()
 
     def flip(self, prob):
         return np.random.random() < prob
 
     def solve(self, iter, damping):
-        currPageNode = np.random.choice(self.prGraph)
+        curr_node = np.random.choice(self.pr_graph)
 
         for _ in range(iter):
             if self.flip(damping):
-                if len(currPageNode.outwardNodes) == 0:
-                    currPageNode = np.random.choice(self.prGraph)
+                if len(curr_node.outwardNodes) == 0:
+                    curr_node = np.random.choice(self.pr_graph)
                 else:
-                    currPageNode = np.random.choice(currPageNode.outwardNodes)
+                    curr_node = np.random.choice(curr_node.outwardNodes)
             else:
-                currPageNode = np.random.choice(self.prGraph)
+                curr_node = np.random.choice(self.pr_graph)
 
-            self.pageRankCounter[currPageNode.name] += 1
+            self.page_rank_counter[curr_node.name] += 1
 
-    def export(self, fileName):
+    def export(self, file_name):
 
-        total = sum(self.pageRankCounter.values())
-        for key in self.pageRankCounter:
-            self.pageRankCounter[key] /= total
+        total = sum(self.page_rank_counter.values())
+        for key in self.page_rank_counter:
+            self.page_rank_counter[key] /= total
 
-        returnDict = {}
-        for node in self.prGraph:
-            returnDict[node.name] = self.pageRankCounter[node.name]
+        return_dict = {}
+        for node in self.pr_graph:
+            return_dict[node.name] = self.page_rank_counter[node.name]
 
-        with open(f"results/{fileName}", "w") as f:
-            json.dump(returnDict, f, indent=4)
+        with open(f"results/{file_name}", "w") as f:
+            json.dump(return_dict, f, indent=4)
 
 
-def parseCmdLineArgs():
+def parse():
     # instantiate a ArgumentParser object
     parser = argparse.ArgumentParser(
         description="Solve Graph with simple solver method")
@@ -79,10 +50,10 @@ def parseCmdLineArgs():
     parser.add_argument("-i", "--iter", type=int,
                         default=1000, help="The amount of iterations")
 
-    parser.add_argument("-f", "--fileName", type=str,
+    parser.add_argument("-f", "--file_name", type=str,
                         default="graph.json", help="Input file for the graph")
 
-    parser.add_argument("-of", "--outFileName", type=str,
+    parser.add_argument("-of", "--out_file_name", type=str,
                         default="result_walker.json", help="Output file after solving")
 
     return parser.parse_args()
@@ -91,12 +62,12 @@ def parseCmdLineArgs():
 def main():
     try:
 
-        args = parseCmdLineArgs()
+        args = parse()
 
-        solver = PageRankSolver(args.fileName)
+        solver = PageRankSolver(args.file_name)
         solver.solve(args.iter, 0.85)
 
-        solver.export(args.outFileName)
+        solver.export(args.out_file_name)
 
     except Exception as e:
         print("Exception caught in main - {}".format(e))
