@@ -16,6 +16,9 @@ python -m solvers.randomWalkerSolver
 ```
 python -m solvers.simpleSolver
 ```
+```
+python -m solvers.matrixSolver
+```
 
 ## To run Mininet simulation of Distributed Pagerank Algorithm
 TBD
