@@ -1,0 +1,390 @@
+INFO:PeerNode:PeerNode::configure
+DEBUG:PeerNode:PeerNode::configure - obtain REP and REQ sockets
+DEBUG:PeerNode:PeerNode::configure - connecting PULL to 10.0.0.1:5577
+DEBUG:PeerNode:PeerNode::configure - connecting PULL to 10.0.0.2:5577
+DEBUG:PeerNode:PeerNode::configure - connecting PULL to 10.0.0.3:5577
+DEBUG:PeerNode:PeerNode::configure - connecting PULL to 10.0.0.5:5577
+DEBUG:PeerNode:PeerNode::configure - bind the PUSH at 10.0.0.4:5577
+INFO:PeerNode:PeerNode::configure completed
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 2.553
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 2.553
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 2.553
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 24.743100000000002
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 4.253
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 12.250649999999998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 3.02305
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 4.253
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 7.2730500000000005
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_11', 'Node_7'} with {0.853, 2.553, 4.253}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_34', 'Node_48'} with {2.553, 7.2730500000000005, 12.250649999999998, 24.743100000000002, 0.0030000000000000005}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_3', 'Node_0', 'Node_42', 'Node_34', 'Node_48'} with {2.553, 3.02305, 4.253, 7.2730500000000005, 0.0030000000000000005}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_37', 'Node_11', 'Node_44', 'Node_23', 'Node_0', 'Node_42', 'Node_18'} with {0.853, 2.553, 3.02305, 4.253}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_15, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_45, and all its inward links, with 1.7029999999999998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_36, and all its inward links, with 2.553
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_14, and all its inward links, with 1.4505499999999998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_22, and all its inward links, with 4.253
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_21, and all its inward links, with 5.953
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_13, and all its inward links, with 5.95555
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 3.403
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_1, and all its inward links, with 0.0030000000000000005
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 6.6381
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 7.885092500000001
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 1.5805999999999998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 53.417376125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 4.0031
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 2.5725925
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 37.404092250000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 7.5553286250000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 5.57305
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 12.787935
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_7'} with {1.5805999999999998, 4.0031, 6.6381}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_48'} with {37.404092250000005, 6.6381, 7.885092500000001, 12.787935, 53.417376125}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_3', 'Node_0', 'Node_42', 'Node_48'} with {5.57305, 6.6381, 7.5553286250000005, 7.885092500000001, 12.787935}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_44', 'Node_23', 'Node_0', 'Node_42', 'Node_18'} with {2.5725925, 4.0031, 5.57305, 6.6381, 7.5553286250000005}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_15, and all its inward links, with 2.5725925
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_45, and all its inward links, with 3.02305
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_36, and all its inward links, with 4.72305
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_14, and all its inward links, with 5.8306
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_21, and all its inward links, with 6.76305
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 8.5931
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_1, and all its inward links, with 10.4376425
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_27, and all its inward links, with 12.116052499999999
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_35, and all its inward links, with 13.436102499999997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_26, and all its inward links, with 24.434635
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 8.788296124999999
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 12.572744749999998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 10.450046125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 146.53641940625
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 5.464753624999999
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 6.42502933125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 66.1436773440625
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 11.539833037499998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 7.4175925000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 19.02718670625
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_7'} with {8.788296124999999, 10.450046125, 5.464753624999999}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_48'} with {66.1436773440625, 8.788296124999999, 12.572744749999998, 146.53641940625, 19.02718670625}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_3', 'Node_0', 'Node_42', 'Node_48'} with {7.4175925000000005, 8.788296124999999, 11.539833037499998, 12.572744749999998, 19.02718670625}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_44', 'Node_23', 'Node_0', 'Node_42', 'Node_18'} with {5.464753624999999, 6.42502933125, 7.4175925000000005, 8.788296124999999, 11.539833037499998}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_15, and all its inward links, with 7.87315
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_36, and all its inward links, with 9.48189793125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_14, and all its inward links, with 10.574996125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_21, and all its inward links, with 11.151644625
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 13.436102499999997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_1, and all its inward links, with 14.033652499999997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_27, and all its inward links, with 16.5652925
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_35, and all its inward links, with 25.754685000000002
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_26, and all its inward links, with 29.110089749999997
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 17.024075431249997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 17.8761087003125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 13.506654624999998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 216.0764641755312
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 9.970227499999998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 9.811858081874998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 92.03027777142186
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 16.047692395265624
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 11.462613241562499
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 30.144151241562493
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_7'} with {17.024075431249997, 13.506654624999998, 9.970227499999998}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_48'} with {17.024075431249997, 17.8761087003125, 216.0764641755312, 92.03027777142186, 30.144151241562493}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_3', 'Node_0', 'Node_42', 'Node_48'} with {11.462613241562499, 16.047692395265624, 17.024075431249997, 17.8761087003125, 30.144151241562493}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_44', 'Node_23', 'Node_0', 'Node_42', 'Node_18'} with {9.970227499999998, 9.811858081874998, 11.462613241562499, 16.047692395265624, 17.024075431249997}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_15, and all its inward links, with 34.6840625
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_36, and all its inward links, with 39.16150975
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_21, and all its inward links, with 10.435634056249997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 12.273687124999997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_1, and all its inward links, with 15.783498625000002
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_27, and all its inward links, with 22.175505
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_35, and all its inward links, with 22.365479999999998
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 39.2047420728125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 27.325528555328123
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 14.99402383125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 255.4719808382843
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 32.759503125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 13.64353853597578
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 119.37891909232705
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 24.079699272028904
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 36.6902832875
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 48.00966481814062
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_7'} with {32.759503125, 14.99402383125, 39.2047420728125}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_48'} with {39.2047420728125, 48.00966481814062, 119.37891909232705, 27.325528555328123, 255.4719808382843}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_3', 'Node_0', 'Node_42', 'Node_48'} with {36.6902832875, 39.2047420728125, 48.00966481814062, 24.079699272028904, 27.325528555328123}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_44', 'Node_23', 'Node_0', 'Node_42', 'Node_18'} with {32.759503125, 36.6902832875, 39.2047420728125, 13.64353853597578, 24.079699272028904}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_15, and all its inward links, with 35.590993375000004
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_21, and all its inward links, with 46.751480625
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 16.8871093
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_1, and all its inward links, with 19.863657999999997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_27, and all its inward links, with 20.552179250000002
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 70.84410290000001
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 42.51121509541953
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 18.4621593
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 356.1527096070389
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 33.53039436875
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 20.470744381224566
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 208.129135243692
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 36.9875328311066
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 36.6902832875
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 78.82453037
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_7'} with {33.53039436875, 18.4621593, 70.84410290000001}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_48'} with {356.1527096070389, 70.84410290000001, 42.51121509541953, 78.82453037, 208.129135243692}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_42', 'Node_48', 'Node_0', 'Node_3'} with {78.82453037, 42.51121509541953, 36.9875328311066, 70.84410290000001}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_0', 'Node_18', 'Node_42', 'Node_23'} with {33.53039436875, 20.470744381224566, 70.84410290000001, 36.9875328311066}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_45, and all its inward links, with 34.346478412500005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_36, and all its inward links, with 35.051285875
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_14, and all its inward links, with 39.94635703750001
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 18.654756125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_27, and all its inward links, with 52.427919706249995
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_35, and all its inward links, with 24.522172249999997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_26, and all its inward links, with 31.95534436875
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 70.84410290000001
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 68.7038508145
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 18.4621593
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 517.4714494685043
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 33.53039436875
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 31.44240290644061
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 321.13321441011203
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 59.251273192325
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 33.196592993749995
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 80.32703017125
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_48', 'Node_12', 'Node_3'} with {80.32703017125, 321.13321441011203, 68.7038508145, 517.4714494685043}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_48', 'Node_42', 'Node_3'} with {80.32703017125, 33.196592993749995, 59.251273192325, 68.7038508145}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_44', 'Node_42', 'Node_23'} with {33.196592993749995, 59.251273192325, 31.44240290644061}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_15, and all its inward links, with 68.35950877995312
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_45, and all its inward links, with 36.87895258125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_36, and all its inward links, with 38.1138739125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_14, and all its inward links, with 138.2083839953125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_21, and all its inward links, with 14.206111300312498
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 16.709542706249998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_1, and all its inward links, with 22.639260537499997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_27, and all its inward links, with 23.196258700312498
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_35, and all its inward links, with 58.77512574245312
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_26, and all its inward links, with 31.496592993749996
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 71.03377706822577
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 69.9809756455625
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 20.821421456874997
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 683.4152683803361
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 61.38363246296014
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 50.36658221347625
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 284.6005068653392
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 60.33682929872812
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 35.799792825625
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 78.8348218083044
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_7'} with {20.821421456874997, 61.38363246296014, 71.03377706822577}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_48'} with {69.9809756455625, 71.03377706822577, 683.4152683803361, 78.8348218083044, 284.6005068653392}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_3', 'Node_0', 'Node_42', 'Node_48'} with {35.799792825625, 69.9809756455625, 71.03377706822577, 78.8348218083044, 60.33682929872812}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_44', 'Node_23', 'Node_0', 'Node_42', 'Node_18'} with {35.799792825625, 71.03377706822577, 50.36658221347625, 60.33682929872812, 61.38363246296014}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_15, and all its inward links, with 32.645678555328125
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_45, and all its inward links, with 33.0501096940625
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_36, and all its inward links, with 195.61742204920154
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_14, and all its inward links, with 134.74715389601562
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_21, and all its inward links, with 199.586008665764
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 44.60359327026562
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_1, and all its inward links, with 17.08491573834375
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_27, and all its inward links, with 17.023464116562497
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_35, and all its inward links, with 20.096371456874998
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_26, and all its inward links, with 91.87816360570858
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 198.24993413792828
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 68.71259853705874
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 16.100228377592188
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 852.3897401333325
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 31.026876772028906
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 51.289304903918904
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 458.0325072483274
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 59.25870875649993
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 169.67780874182128
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 210.6784982969648
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_7'} with {16.100228377592188, 198.24993413792828, 31.026876772028906}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_48'} with {68.71259853705874, 198.24993413792828, 458.0325072483274, 210.6784982969648, 852.3897401333325}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_3', 'Node_0', 'Node_42', 'Node_48'} with {68.71259853705874, 198.24993413792828, 169.67780874182128, 210.6784982969648, 59.25870875649993}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_44', 'Node_23', 'Node_0', 'Node_42', 'Node_18'} with {198.24993413792828, 169.67780874182128, 51.289304903918904, 59.25870875649993, 31.026876772028906}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_15, and all its inward links, with 224.17433371254165
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_45, and all its inward links, with 35.87703076189062
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_36, and all its inward links, with 36.879126772028904
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_14, and all its inward links, with 70.21711597041951
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_21, and all its inward links, with 167.1278087418213
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 136.2466619903686
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_1, and all its inward links, with 39.61605427972577
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_27, and all its inward links, with 142.06163743054807
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_35, and all its inward links, with 113.42450872847799
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_26, and all its inward links, with 95.36646656485229
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 333.45982108620854
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 180.77972355242005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 35.251696137766906
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 1429.1078676468978
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 193.8262336556604
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 50.37290244302494
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 937.3665286650307
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 154.51576501955702
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 34.75025775622457
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 403.50351061509053
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_7'} with {193.8262336556604, 35.251696137766906, 333.45982108620854}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_48'} with {937.3665286650307, 333.45982108620854, 403.50351061509053, 180.77972355242005, 1429.1078676468978}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_3', 'Node_0', 'Node_42', 'Node_48'} with {34.75025775622457, 333.45982108620854, 403.50351061509053, 180.77972355242005, 154.51576501955702}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_44', 'Node_23', 'Node_0', 'Node_42', 'Node_18'} with {193.8262336556604, 34.75025775622457, 333.45982108620854, 50.37290244302494, 154.51576501955702}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_15, and all its inward links, with 97.26383241920628
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_45, and all its inward links, with 48.61728525622456
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_36, and all its inward links, with 48.086960331106596
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_14, and all its inward links, with 82.67725755632533
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_21, and all its inward links, with 80.6532783145
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_17, and all its inward links, with 340.3148859970897
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_1, and all its inward links, with 305.28280316598307
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_27, and all its inward links, with 183.93291495713817
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_35, and all its inward links, with 89.62638834
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_26, and all its inward links, with 61.38754857485659
+INFO:PeerNode:PeerNode::calculate_pagerank
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_0, and all its inward links, with 152.08254412365034
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_3, and all its inward links, with 344.6809840228269
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_7, and all its inward links, with 261.0684326910856
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_11, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_12, and all its inward links, with 2375.177322611473
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_18, and all its inward links, with 85.95230755632534
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_23, and all its inward links, with 131.34140026662345
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_34, and all its inward links, with 0.0030000000000000005
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_37, and all its inward links, with 0.853
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_38, and all its inward links, with 1341.0931071078599
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_42, and all its inward links, with 293.83183641940286
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_44, and all its inward links, with 44.276916281440606
+DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_48, and all its inward links, with 422.790815602629
+DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_0', 'Node_18', 'Node_7'} with {152.08254412365034, 85.95230755632534, 261.0684326910856}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_38', 'Node_3', 'Node_0', 'Node_12', 'Node_48'} with {344.6809840228269, 422.790815602629, 2375.177322611473, 152.08254412365034, 1341.0931071078599}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_44', 'Node_3', 'Node_0', 'Node_42', 'Node_48'} with {344.6809840228269, 293.83183641940286, 422.790815602629, 44.276916281440606, 152.08254412365034}
+INFO:PeerNode:PeerNode::send_pagerank_message
+DEBUG:PeerNode:Sending message to subgraph 1 to update {'Node_44', 'Node_23', 'Node_0', 'Node_42', 'Node_18'} with {131.34140026662345, 293.83183641940286, 44.276916281440606, 85.95230755632534, 152.08254412365034}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - out of the event loop
