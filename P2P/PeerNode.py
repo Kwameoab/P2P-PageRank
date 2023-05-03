@@ -75,8 +75,6 @@ class PeerNode():
 
         for subgraph_index, new_pagerank_list in outward_messages_to_send.items():
             new_pagerank_id, new_pagerank_values = zip(*new_pagerank_list)
-            new_pagerank_id = set(new_pagerank_id)
-            new_pagerank_values = set(new_pagerank_values)
 
             self.logger.debug(f"Sending message to subgraph {subgraph_index} to update {new_pagerank_id} with {new_pagerank_values}")
             self.send_pagerank_message(new_pagerank_id, new_pagerank_values, subgraph_index)
