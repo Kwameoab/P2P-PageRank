@@ -92,3 +92,7 @@ def convert_to_page_subgraph(json_file, index):
                     overall_graph[out_index])
 
     return page_graph_list, len(graph_list)
+
+def convert_page_ranking_to_dict(json_file):
+        with open(json_file, "r") as f:
+            return json.load(f)
