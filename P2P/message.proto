@@ -1,6 +1,9 @@
 syntax = "proto3";
 
 message updateReq {
+    repeated string id_to_update = 1;
+    repeated string pagerank_to_update = 2;
+    uint32 subgraph_id = 3;
 }
 
 message updateResp {

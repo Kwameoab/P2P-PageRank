@@ -21,4 +21,12 @@ python -m solvers.matrixSolver
 ```
 
 ## To run Mininet simulation of Distributed Pagerank Algorithm
-TBD
+This simulation uses 5 peer nodes and outputs the results to the results folder. 
+First run:
+```
+sudo mn --topo=single,5
+```
+Then, inside mininet, run
+```
+source testing.sh
+```

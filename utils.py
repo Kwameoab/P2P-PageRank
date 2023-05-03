@@ -4,12 +4,12 @@ import networkx as nx
 
 
 class PageNode ():
-    def __init__(self, name):
+    def __init__(self, name, subgraph):
         self.name = name
         self.inward_nodes = []
         self.outward_nodes = []
         self.page_rank = 1
-
+        self.subgraph = subgraph
 
 def convert_to_matrix(json_file):
     graph_list = []
@@ -47,7 +47,7 @@ def convert_to_page_graph(json_file):
         graph_list = json.load(f)
 
     for node in graph_list:
-        page_graph_list.append(PageNode(node["name"]))
+        page_graph_list.append(PageNode(node["name"], node["subgraph"]))
 
     for index, node in enumerate(graph_list):
         for in_node in node["inward_links"]:
@@ -62,6 +62,10 @@ def convert_to_page_graph(json_file):
 
     return page_graph_list
 
+def load_subgraph_file(json_file):
+    with open(json_file, "r") as f:
+        subgraph_list = json.load(f)
+    return subgraph_list
 
 def convert_to_page_subgraph(json_file, index):
     graph_list = []
@@ -72,9 +76,9 @@ def convert_to_page_subgraph(json_file, index):
         graph_list = json.load(f)
 
     for i, node in enumerate(graph_list):
-        overall_graph[i] = PageNode(node["name"])
+        overall_graph[i] = PageNode(node["name"], node["subgraph"])
         if node["subgraph"] == index:
-            page_graph_list[i] = PageNode(node["name"])
+            page_graph_list[i] = PageNode(node["name"], node["subgraph"])
 
     for i, node in enumerate(graph_list):
         if node["subgraph"] == index:
@@ -87,4 +91,4 @@ def convert_to_page_subgraph(json_file, index):
                 page_graph_list[i].outward_nodes.append(
                     overall_graph[out_index])
 
-    return page_graph_list
+    return page_graph_list, len(graph_list)
