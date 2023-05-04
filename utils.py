@@ -104,4 +104,13 @@ def convert_results_ranking_to_dict(results_folder):
             with open(f"{results_folder}/{file}", "r") as f:
                 results.update(json.load(f))
 
+
+    page_rank_sum = 0
+
+    for pagerank in results.values():
+        page_rank_sum += pagerank
+
+    for node, pagerank in results.items():
+        results[node] = pagerank / page_rank_sum
+
     return results

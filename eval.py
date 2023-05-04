@@ -27,7 +27,7 @@ class Evaluator():
 
     def export(self, file_name, output):
         with open(file_name, "w") as f:
-            json.dump(output, f, indent=4)
+            json.dump(dict(sorted(output.items())), f, indent=4)
 
 
 def parse():
