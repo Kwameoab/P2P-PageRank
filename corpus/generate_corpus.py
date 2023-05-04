@@ -10,9 +10,8 @@ class Corpus():
         self.documents = {}
         self.document_id = 0
 
-        self.documents['docs'] = {}
-        self.documents['top_100'] = []
-        self.documents['details'] = {}
+        self.documents = {}
+        self.document_details = {}
 
         self.all_words = []
         self.thresholded_words = []
@@ -21,24 +20,25 @@ class Corpus():
 
     # generate the intial corpus with preprocessed documents
     def generate_corpus(self): 
-        penn_treebank = nltk.corpus.treebank
+        reuters = nltk.corpus.reuters
 
         # preprocess each document
-        for index, fileid in enumerate(penn_treebank.fileids()):
-            doc = penn_treebank.words(fileids=fileid) # using penn treebank
+        for index, fileid in enumerate(reuters.fileids()):
+            doc = reuters.words(fileids=fileid) # using penn treebank
             words = [word.lower() for word in doc if word.isalpha()]
             filtered_words = [word for word in words if word not in stopwords.words('english')]
+            filtered_words = [word for word in filtered_words if len(word) > 1]
 
             self.all_words.extend(filtered_words)
 
-            self.documents['docs']['Doc_' + str(self.document_id)] = filtered_words
+            self.documents['Doc_' + str(self.document_id)] = filtered_words
             self.document_id += 1
 
     # choose words that occur at least 5 times in entire corpus
     def threshold(self, threshold_num):
         counter = Counter(self.all_words)
 
-        documents = self.documents['docs']
+        documents = self.documents
         for doc in documents:
             documents[doc] = [word for word in documents[doc] if counter[word] >= threshold_num]
 
@@ -49,25 +49,28 @@ class Corpus():
         counter = Counter(self.thresholded_words)
 
         # details about document dimension and num_docs
-        self.documents['details']['dimension'] = len(counter)
-        self.documents['details']['num_docs'] = len(self.documents['docs'])
+        self.document_details['dimension'] = len(counter)
+        self.document_details['num_docs'] = len(self.documents)
 
-        self.documents['top_100'] = [elem[0] for elem in counter.most_common(100)]
+        self.document_details['top_100'] = [elem[0] for elem in counter.most_common(100)]
 
-    def export(self, file_name):
-        with open(file_name, "w") as f:
+    def export(self, doc_name, doc_details_name):
+        with open(doc_name, "w") as f:
             json.dump(self.documents, f, indent=4)
 
+        with open(doc_details_name, "w") as f:
+            json.dump(self.document_details, f, indent=4)
+
     def random_distribute(self, graph_input, graph_output):
-        document_ids = list(self.documents['docs'].keys()) # shuffle documents
+        document_ids = list(self.documents) # shuffle documents
         random.shuffle(document_ids)
 
         # assign documents to nodes 
         node_num_with_docs = {}
         idx = 0
         for doc in document_ids:
-            node_num_with_docs[idx % 50] = node_num_with_docs.get(idx % 50, [])
-            node_num_with_docs[idx % 50].append(doc)
+            node_num_with_docs[idx] = node_num_with_docs.get(idx, [])
+            node_num_with_docs[idx].append(doc)
 
             idx += 1
 
@@ -77,7 +80,7 @@ class Corpus():
             graph_ks = json.load(f)
             for i, node in enumerate(node_num_with_docs.keys()):
                 graph_details = graph_ks[i]
-                graph_details['docs'] = node_num_with_docs[node]
+                graph_details['doc'] = node_num_with_docs[node]
 
                 final_node_with_docs.append(graph_details)
 
@@ -90,8 +93,11 @@ def parse():
     # instantiate a ArgumentParser object
     parser = argparse.ArgumentParser(description="Create document corpus.")
 
-    parser.add_argument("-f", "--file_name", type=str,
+    parser.add_argument("-d", "--doc_name", type=str,
                         default="documents.json", help="Output file containing list of documents and document ids")
+
+    parser.add_argument("-dd", "--doc_details_name", type=str,
+                        default="document_details.json", help="Output file information about docs.json")
 
     parser.add_argument("-gi", "--graph_input", type=str,
                         default="graph_ks.json", help="Input file containing node links")
@@ -112,13 +118,13 @@ def main():
         args = parse()
 
         # generate documents with document ids 
-        corpus = Corpus()
+        corpus = Corpus(args)
         corpus.generate_corpus()
         corpus.threshold(args.threshold_num)
         corpus.generate_top_100()
 
         # export document json 
-        corpus.export(args.file_name)
+        corpus.export(args.doc_name, args.doc_details_name)
 
         # use graph json to create graph with node links and document ids
         corpus.random_distribute(args.graph_input, args.graph_output)
