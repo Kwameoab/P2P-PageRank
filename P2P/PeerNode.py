@@ -11,12 +11,16 @@ import time
 
 class PeerNode():
     def __init__(self, args, logger):
-        self.document_graph, self.total_docs = convert_to_page_subgraph(
+        page_graph_list, self.total_docs = convert_to_page_subgraph(
             args.file_name, args.subgraph)
+        self.document_graph = {}
+        self.subgraph = args.subgraph
+        for node in page_graph_list:
+            if node.subgraph == self.subgraph:
+                self.document_graph[node.name] = node
         self.logger = logger
         self.port = args.port
         self.addr = args.addr
-        self.subgraph = args.subgraph
         self.subgraph_info = load_subgraph_file(args.subgraph_file)
         self.damping = args.damping
         self.iterations = args.iterations
@@ -55,7 +59,7 @@ class PeerNode():
         self.event_loop()
 
     def calculate_pagerank(self):
-        self.logger.info("PeerNode::calculate_pagerank")
+        self.logger.debug("PeerNode::calculate_pagerank")
 
         outward_messages_to_send = {}
         
@@ -68,7 +72,6 @@ class PeerNode():
             random_walk = (1 - self.damping) / self.total_docs
             new_page_rank = random_walk + self.damping * page_rank_sum
             rel_error = abs(node.page_rank - new_page_rank) / new_page_rank
-            self.logger.debug(f"Updated {node.name} with {new_page_rank}")
             self.document_graph[document].page_rank = new_page_rank
 
             for out_node in node.outward_nodes:
@@ -78,15 +81,15 @@ class PeerNode():
             self.update_page_graph(node.name, new_page_rank)
 
         if not outward_messages_to_send:
-            self.logger.info("No changes to pagerank.")
+            self.logger.debug("No changes to pagerank.")
             return
         
         new_pagerank_id, new_pagerank_values = zip(*outward_messages_to_send.items())
-
+        
         self.send_pagerank_message(new_pagerank_id, new_pagerank_values)
             
     def send_pagerank_message(self, new_pagerank_id, new_pagerank_values):
-        self.logger.info(f"PeerNode::send_pagerank_message updating {new_pagerank_id} with {new_pagerank_values}")
+        self.logger.debug(f"PeerNode::send_pagerank_message updating {new_pagerank_id} with {new_pagerank_values}")
 
         new_pagerank_id = [str(x) for x in new_pagerank_id]
         new_pagerank_values = [str(x) for x in new_pagerank_values]
@@ -98,14 +101,13 @@ class PeerNode():
         buf2send = update_req.SerializeToString()
         self.logger.debug(buf2send)
         try:
-            time.sleep(1)
             self.pub.send(buf2send)
         except zmq.ZMQError as e:
             self.logger.info(e)
 
 
     def update_page_graph(self, node_to_update, new_page_rank):
-        self.logger.info(f"PeerNode::update_page_graph - updating {node_to_update}, and all its inward links, with {new_page_rank}")
+        self.logger.debug(f"PeerNode::update_page_graph - updating {node_to_update}, and all its inward links, with {new_page_rank}")
         
         for document in self.document_graph:
             for in_node in self.document_graph[document].inward_nodes:
@@ -126,6 +128,7 @@ class PeerNode():
         try:
             self.logger.info("PeerNode::event_loop - run the event loop")
             iters = 0
+            no_message = 0
             while True:
                 try:
                     bytes_rcvd = self.sub.recv(flags=zmq.NOBLOCK)
@@ -137,8 +140,11 @@ class PeerNode():
                     iters += 1
                 except zmq.ZMQError as e:
                     if e.errno == zmq.EAGAIN:
-                        self.logger.info("No message yet...")
+                        self.logger.debug("No message yet...")
                         time.sleep(1)
+                        no_message += 1
+                        if no_message == 50:
+                            break
 
              
             self.logger.info("PeerNode::event_loop - out of the event loop")
@@ -147,7 +153,7 @@ class PeerNode():
 
     def handle_update(self, update_req):
         try:
-            self.logger.info(f"PeerNode::handle_update")
+            self.logger.debug(f"PeerNode::handle_update")
             self.logger.debug(update_req)
 
             for node_id, new_rank in zip(update_req.id_to_update, [float(x) for x in update_req.pagerank_to_update]):
@@ -200,7 +206,7 @@ def parse():
     parser.add_argument("-p", "--port", type=int, default=5577,
                         help="Port number on which our underlying ZMQ rep socket runs, default=5577")
 
-    parser.add_argument("-l", "--loglevel", type=int, default=logging.DEBUG, choices=[
+    parser.add_argument("-l", "--loglevel", type=int, default=logging.INFO, choices=[
                         logging.DEBUG, logging.INFO, logging.WARNING, logging.ERROR, logging.CRITICAL], help="logging level, choices 10,20,30,40,50: default 20=logging.INFO")
 
     return parser.parse_args()

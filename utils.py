@@ -69,27 +69,24 @@ def load_subgraph_file(json_file):
 
 def convert_to_page_subgraph(json_file, index):
     graph_list = []
-    page_graph_list = defaultdict(PageNode)
-    overall_graph = defaultdict(PageNode)
+    page_graph_list = []
 
     with open(json_file, "r") as f:
         graph_list = json.load(f)
 
-    for i, node in enumerate(graph_list):
-        overall_graph[i] = PageNode(node["name"], node["subgraph"])
-        if node["subgraph"] == index:
-            page_graph_list[i] = PageNode(node["name"], node["subgraph"])
+    for node in graph_list:
+        page_graph_list.append(PageNode(node["name"], node["subgraph"]))
 
-    for i, node in enumerate(graph_list):
-        if node["subgraph"] == index:
-            for in_node in node["inward_links"]:
-                in_index = int(str(in_node).split("_")[-1])
-                page_graph_list[i].inward_nodes.append(overall_graph[in_index])
+    for index, node in enumerate(graph_list):
+        for in_node in node["inward_links"]:
+            in_index = int(str(in_node).split("_")[-1])
+            page_graph_list[index].inward_nodes.append(
+                page_graph_list[in_index])
 
-            for out_node in node["outward_links"]:
-                out_index = int(str(out_node).split("_")[-1])
-                page_graph_list[i].outward_nodes.append(
-                    overall_graph[out_index])
+        for out_node in node["outward_links"]:
+            out_index = int(str(out_node).split("_")[-1])
+            page_graph_list[index].outward_nodes.append(
+                page_graph_list[out_index])
 
     return page_graph_list, len(graph_list)
 
@@ -103,14 +100,5 @@ def convert_results_ranking_to_dict(results_folder):
         if "json" in file:
             with open(f"{results_folder}/{file}", "r") as f:
                 results.update(json.load(f))
-
-
-    page_rank_sum = 0
-
-    for pagerank in results.values():
-        page_rank_sum += pagerank
-
-    for node, pagerank in results.items():
-        results[node] = pagerank / page_rank_sum
 
     return results
