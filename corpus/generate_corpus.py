@@ -16,6 +16,9 @@ class Corpus():
         self.all_words = []
         self.thresholded_words = []
 
+        self.word_to_index = {}
+        self.index_to_doc = {}
+
         self.num_peers = args.num_peers
 
     # generate the intial corpus with preprocessed documents
@@ -54,12 +57,37 @@ class Corpus():
 
         self.document_details['top_100'] = [elem[0] for elem in counter.most_common(100)]
 
+    def generate_index(self):
+        all_words = list(set(self.thresholded_words))
+        print(f'generating index for {len(all_words)} words')
+
+        idx = 0
+        for word in all_words:
+            self.word_to_index[word] = idx
+
+            for doc_id in self.documents:
+                doc = self.documents[doc_id]
+                if word in doc:
+                    self.index_to_doc[idx] = self.index_to_doc.get(idx, [])
+                    self.index_to_doc[idx].append(doc_id)
+
+            if idx % 200 == 0:
+                print(f'{idx} words done')
+
+            idx += 1
+
     def export(self, doc_name, doc_details_name):
         with open(doc_name, "w") as f:
             json.dump(self.documents, f, indent=4)
 
         with open(doc_details_name, "w") as f:
             json.dump(self.document_details, f, indent=4)
+
+        with open('word_to_index.json', "w") as f:
+            json.dump(self.word_to_index, f, indent=4)
+
+        with open('index_to_doc.json', "w") as f:
+            json.dump(self.index_to_doc, f, indent=4)
 
     def random_distribute(self, graph_input, graph_output):
         document_ids = list(self.documents) # shuffle documents
@@ -122,6 +150,9 @@ def main():
         corpus.generate_corpus()
         corpus.threshold(args.threshold_num)
         corpus.generate_top_100()
+
+        # generate our distributed index
+        corpus.generate_index()
 
         # export document json 
         corpus.export(args.doc_name, args.doc_details_name)

@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rmessage.proto\"R\n\tupdateReq\x12\x14\n\x0cid_to_update\x18\x01 \x03(\t\x12\x1a\n\x12pagerank_to_update\x18\x02 \x03(\t\x12\x13\n\x0bsubgraph_id\x18\x03 \x01(\r\"\x0c\n\nupdateRespb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rmessage.proto\"R\n\tupdateReq\x12\x14\n\x0cid_to_update\x18\x01 \x03(\t\x12\x1a\n\x12pagerank_to_update\x18\x02 \x03(\t\x12\x13\n\x0bsubgraph_id\x18\x03 \x01(\r\"\x0c\n\nupdateResp\"0\n\x06\x64ocReq\x12\x11\n\tdocuments\x18\x01 \x03(\t\x12\x13\n\x0bsubgraph_id\x18\x02 \x01(\rb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'message_pb2', globals())
@@ -24,4 +24,6 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _UPDATEREQ._serialized_end=99
   _UPDATERESP._serialized_start=101
   _UPDATERESP._serialized_end=113
+  _DOCREQ._serialized_start=115
+  _DOCREQ._serialized_end=163
 # @@protoc_insertion_point(module_scope)

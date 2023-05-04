@@ -9,3 +9,8 @@ message updateReq {
 message updateResp {
 
 }
+
+message docReq {
+    repeated string documents = 1;
+    uint32 subgraph_id = 2;
+}
