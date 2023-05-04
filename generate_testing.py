@@ -45,7 +45,7 @@ def main(args):
 
     with open(args.testing_file, "w") as f:
         for i in range(1, args.subgraph + 1):
-            output_str = f"h{i} python3 -m P2P.PeerNode -s {i} -a 10.0.0.{i} -p {args.port} > P2P_results/node{i}.out -e {args.epsilon} -d {args.damping} -f {args.file_name} -it {args.iterations} 2>&1 & \n"
+            output_str = f"h{i} python3 -m P2P.PeerNode -s {i} -a 10.0.0.{i} -p {args.port} > {args.results_folder}/node{i}.out -e {args.epsilon} -d {args.damping} -f {args.file_name} -it {args.iterations} 2>&1 & \n"
             f.write(output_str)
 
     with open(args.subgraph_file, "w") as f:
