@@ -1,282 +1,1705 @@
 INFO:PeerNode:PeerNode::configure
-DEBUG:PeerNode:PeerNode::configure - obtain REP and REQ sockets
-DEBUG:PeerNode:PeerNode::configure - connecting PULL to 10.0.0.2:5577
-DEBUG:PeerNode:PeerNode::configure - connecting PULL to 10.0.0.3:5577
-DEBUG:PeerNode:PeerNode::configure - connecting PULL to 10.0.0.4:5577
-DEBUG:PeerNode:PeerNode::configure - connecting PULL to 10.0.0.5:5577
-DEBUG:PeerNode:PeerNode::configure - bind the PUSH at 10.0.0.1:5577
 INFO:PeerNode:PeerNode::configure completed
 INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 12.62805
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 20.403
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 4.00055
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 3.403
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_47', 'Node_5', 'Node_30', 'Node_49', 'Node_20', 'Node_33', 'Node_43'} with {0.853, 1.7029999999999998, 0.72805, 3.403, 4.00055, 12.62805}
 INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_47', 'Node_30', 'Node_5'} with {0.853, 1.7029999999999998, 20.403}
 INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_43', 'Node_16', 'Node_47', 'Node_5'} with {0.853, 1.7029999999999998, 3.403}
 INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_47', 'Node_5', 'Node_30', 'Node_39', 'Node_49', 'Node_20', 'Node_33'} with {0.853, 1.7029999999999998, 0.72805, 4.00055, 12.62805, 20.403}
-INFO:PeerNode:PeerNode::send_pagerank_message
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_2, and all its inward links, with 240.58919528742274
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_25, and all its inward links, with 135.7995050051028
-INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 10.7368425
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 116.28257925433736
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 205.35381599430931
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 23.223676125
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 340.9527052486466
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 215.9727716205241
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 3.403
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_5', 'Node_30', 'Node_20', 'Node_33'} with {10.7368425, 205.35381599430931, 116.28257925433736, 23.223676125, 215.9727716205241}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_30', 'Node_5'} with {10.7368425, 340.9527052486466, 205.35381599430931}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_5'} with {10.7368425}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_5', 'Node_30', 'Node_39', 'Node_20', 'Node_33'} with {10.7368425, 205.35381599430931, 340.9527052486466, 116.28257925433736, 23.223676125, 215.9727716205241}
-INFO:PeerNode:PeerNode::send_pagerank_message
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_2, and all its inward links, with 424.7593044664524
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_31, and all its inward links, with 9.979316125
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_25, and all its inward links, with 422.5662550075857
-INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 19.74312470625
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 360.0343167564478
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 361.89840879648455
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 211.05540437775798
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 929.0578426366278
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 666.9134859994285
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 3.403
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_5', 'Node_30', 'Node_20', 'Node_33'} with {360.0343167564478, 361.89840879648455, 19.74312470625, 211.05540437775798, 666.9134859994285}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_30', 'Node_5'} with {929.0578426366278, 361.89840879648455, 19.74312470625}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_5'} with {19.74312470625}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_5', 'Node_30', 'Node_39', 'Node_20', 'Node_33'} with {929.0578426366278, 360.0343167564478, 361.89840879648455, 19.74312470625, 211.05540437775798, 666.9134859994285}
-INFO:PeerNode:PeerNode::send_pagerank_message
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_2, and all its inward links, with 8.48541870625
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_25, and all its inward links, with 429.6011237138357
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_9, and all its inward links, with 438.3732581727024
-INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 179.40009372109427
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 366.01395515676035
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 8.0656059003125
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 730.0634352624444
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 1336.271554809634
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 677.9758170400067
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 375.170269446797
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_5', 'Node_30', 'Node_20', 'Node_33', 'Node_43'} with {677.9758170400067, 8.0656059003125, 366.01395515676035, 179.40009372109427, 375.170269446797, 730.0634352624444}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_30', 'Node_5'} with {8.0656059003125, 1336.271554809634, 179.40009372109427}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_43', 'Node_5'} with {179.40009372109427, 375.170269446797}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_5', 'Node_30', 'Node_39', 'Node_20', 'Node_33'} with {677.9758170400067, 8.0656059003125, 366.01395515676035, 179.40009372109427, 1336.271554809634, 730.0634352624444}
-INFO:PeerNode:PeerNode::send_pagerank_message
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_2, and all its inward links, with 456.1771061883646
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_31, and all its inward links, with 1052.404886235119
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_25, and all its inward links, with 790.5521662411337
-INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 620.5569199730778
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 672.8223413049636
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 388.60354026010987
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 1114.4497189611218
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 2919.0825912957275
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 1245.5713314141826
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 375.170269446797
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_5', 'Node_30', 'Node_20', 'Node_33'} with {672.8223413049636, 388.60354026010987, 620.5569199730778, 1114.4497189611218, 1245.5713314141826}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_30', 'Node_5'} with {388.60354026010987, 620.5569199730778, 2919.0825912957275}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_5'} with {620.5569199730778}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_5', 'Node_30', 'Node_39', 'Node_20', 'Node_33'} with {672.8223413049636, 388.60354026010987, 2919.0825912957275, 620.5569199730778, 1114.4497189611218, 1245.5713314141826}
-INFO:PeerNode:PeerNode::send_pagerank_message
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_2, and all its inward links, with 7.708765015265625
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_31, and all its inward links, with 1068.756831270582
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_25, and all its inward links, with 1284.3942802995416
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_9, and all its inward links, with 671.9723413049637
-INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 947.2852611169535
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 1092.5881382546102
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 7.405450262975781
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 1874.6249961514657
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 3652.564859408855
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 2022.138055771029
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 573.7294901092192
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_5', 'Node_30', 'Node_20', 'Node_33', 'Node_43'} with {1092.5881382546102, 2022.138055771029, 7.405450262975781, 1874.6249961514657, 947.2852611169535, 573.7294901092192}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_30', 'Node_5'} with {947.2852611169535, 3652.564859408855, 7.405450262975781}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_43', 'Node_5'} with {947.2852611169535, 573.7294901092192}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_5', 'Node_30', 'Node_39', 'Node_20', 'Node_33'} with {1092.5881382546102, 3652.564859408855, 2022.138055771029, 7.405450262975781, 1874.6249961514657, 947.2852611169535}
-INFO:PeerNode:PeerNode::send_pagerank_message
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_2, and all its inward links, with 331.16600922109336
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_31, and all its inward links, with 676.0368406884689
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_25, and all its inward links, with 6.555450262975781
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_9, and all its inward links, with 3055.527307372861
-INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 1593.4342467287456
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 6.425132723529414
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 282.34410783792936
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 3083.9333496248087
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 5193.631956318964
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 12.736495538529415
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 2599.751211266932
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_5', 'Node_30', 'Node_20', 'Node_33', 'Node_43'} with {6.425132723529414, 2599.751211266932, 3083.9333496248087, 12.736495538529415, 1593.4342467287456, 282.34410783792936}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_30', 'Node_5'} with {5193.631956318964, 1593.4342467287456, 282.34410783792936}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_43', 'Node_5'} with {1593.4342467287456, 2599.751211266932}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_5', 'Node_30', 'Node_39', 'Node_20', 'Node_33'} with {6.425132723529414, 5193.631956318964, 3083.9333496248087, 12.736495538529415, 1593.4342467287456, 282.34410783792936}
-INFO:PeerNode:PeerNode::send_pagerank_message
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_2, and all its inward links, with 281.49410783792933
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_31, and all its inward links, with 1330.419857798292
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_25, and all its inward links, with 3253.2435892088797
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_9, and all its inward links, with 806.0454719494105
-INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 2621.3463471810874
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 2766.1100508275476
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 240.1229916622399
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 2249.6673088116745
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 4847.270436483084
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 5118.153594030963
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 687.691651156999
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_5', 'Node_30', 'Node_20', 'Node_33', 'Node_43'} with {2249.6673088116745, 2766.1100508275476, 687.691651156999, 240.1229916622399, 2621.3463471810874, 5118.153594030963}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_30', 'Node_5'} with {240.1229916622399, 2621.3463471810874, 4847.270436483084}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_43', 'Node_5'} with {2621.3463471810874, 687.691651156999}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_5', 'Node_30', 'Node_39', 'Node_20', 'Node_33'} with {2249.6673088116745, 2766.1100508275476, 4847.270436483084, 240.1229916622399, 2621.3463471810874, 5118.153594030963}
-INFO:PeerNode:PeerNode::send_pagerank_message
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::event_loop - run the event loop
-INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_8, and all its inward links, with 2223.356679576892
-INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 1912.2202124899231
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 2766.1100508275476
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 240.1229916622399
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 5986.5146280427525
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 9186.874970201654
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 7007.156771671321
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 687.691651156999
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_33', 'Node_5'} with {1912.2202124899231, 5986.5146280427525, 7007.156771671321}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_5'} with {1912.2202124899231, 9186.874970201654}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_5'} with {1912.2202124899231}
-INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_33', 'Node_39', 'Node_5'} with {1912.2202124899231, 5986.5146280427525, 9186.874970201654, 7007.156771671321}
 INFO:PeerNode:PeerNode::send_pagerank_message
 INFO:PeerNode:PeerNode::event_loop - run the event loop
 INFO:PeerNode:PeerNode::event_loop - run the event loop
 INFO:PeerNode:PeerNode::event_loop - run the event loop
 INFO:PeerNode:PeerNode::event_loop - run the event loop
 INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_8, and all its inward links, with 598.1060534834492
 INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 5088.54043383634
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 2766.1100508275476
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 240.1229916622399
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 10292.03951718151
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 10792.527671195958
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 5625.693739491895
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 687.691651156999
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_33', 'Node_5'} with {5088.54043383634, 5625.693739491895, 10292.03951718151}
 INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_5'} with {5088.54043383634, 10792.527671195958}
 INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_5'} with {5088.54043383634}
 INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_33', 'Node_39', 'Node_5'} with {5088.54043383634, 5625.693739491895, 10792.527671195958, 10292.03951718151}
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
 INFO:PeerNode:PeerNode::send_pagerank_message
 INFO:PeerNode:PeerNode::event_loop - run the event loop
 INFO:PeerNode:PeerNode::event_loop - run the event loop
 INFO:PeerNode:PeerNode::event_loop - run the event loop
 INFO:PeerNode:PeerNode::event_loop - run the event loop
 INFO:PeerNode:PeerNode::handle_update
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_8, and all its inward links, with 1638.9553306164346
 INFO:PeerNode:PeerNode::calculate_pagerank
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_5, and all its inward links, with 8748.236589604285
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_16, and all its inward links, with 1.7029999999999998
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_20, and all its inward links, with 2766.1100508275476
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_30, and all its inward links, with 240.1229916622399
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_33, and all its inward links, with 12228.537672231752
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_39, and all its inward links, with 9618.284093843446
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_41, and all its inward links, with 6510.415625054932
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_43, and all its inward links, with 687.691651156999
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_47, and all its inward links, with 0.853
-DEBUG:PeerNode:PeerNode::update_page_graph - updating Node_49, and all its inward links, with 0.72805
-DEBUG:PeerNode:Sending message to subgraph 2 to update {'Node_41', 'Node_33', 'Node_5'} with {12228.537672231752, 8748.236589604285, 6510.415625054932}
 INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 3 to update {'Node_39', 'Node_5'} with {9618.284093843446, 8748.236589604285}
 INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 5 to update {'Node_5'} with {8748.236589604285}
 INFO:PeerNode:PeerNode::send_pagerank_message
-DEBUG:PeerNode:Sending message to subgraph 4 to update {'Node_41', 'Node_33', 'Node_39', 'Node_5'} with {9618.284093843446, 12228.537672231752, 8748.236589604285, 6510.415625054932}
 INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:No message yet.
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::handle_update
+INFO:PeerNode:PeerNode::calculate_pagerank
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::send_pagerank_message
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
+INFO:PeerNode:PeerNode::event_loop - run the event loop
 INFO:PeerNode:PeerNode::event_loop - out of the event loop
+INFO:PeerNode:PeerNode::output
