@@ -1,7 +1,7 @@
 import json
 from collections import defaultdict
 import networkx as nx
-
+import os
 
 class PageNode ():
     def __init__(self, name, subgraph):
@@ -94,5 +94,14 @@ def convert_to_page_subgraph(json_file, index):
     return page_graph_list, len(graph_list)
 
 def convert_page_ranking_to_dict(json_file):
-        with open(json_file, "r") as f:
-            return json.load(f)
+    with open(json_file, "r") as f:
+        return json.load(f)
+
+def convert_results_ranking_to_dict(results_folder):
+    results = {}
+    for file in os.listdir(results_folder):
+        if "json" in file:
+            with open(f"{results_folder}/{file}", "r") as f:
+                results.update(json.load(f))
+
+    return results

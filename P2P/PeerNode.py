@@ -20,6 +20,7 @@ class PeerNode():
         self.damping = args.damping
         self.iterations = args.iterations
         self.epsilon = args.epsilon
+        self.folder = args.folder
         self.push = None
         self.pull = None
 
@@ -91,8 +92,11 @@ class PeerNode():
         update_req.subgraph_id = subgraph_id
 
         buf2send = update_req.SerializeToString()
+        try:
+            self.push.send(buf2send)
+        except zmq.ZMQError as e:
+            self.logger.info(e)
 
-        self.push.send(buf2send)
 
     def update_page_graph(self, node_to_update, new_page_rank):
         self.logger.debug(f"PeerNode::update_page_graph - updating {node_to_update}, and all its inward links, with {new_page_rank}")
@@ -113,15 +117,20 @@ class PeerNode():
             iters = 0
             while True:
                 self.logger.info("PeerNode::event_loop - run the event loop")
-                bytes_rcvd = self.pull.recv()
-                update_req = message_pb2.updateReq()
-                update_req.ParseFromString(bytes_rcvd)
-                if update_req.subgraph_id == self.subgraph:
-                    self.handle_update(update_req)
-                    iters += 1
+                try:
+                    bytes_rcvd = self.pull.recv(flags=zmq.NOBLOCK)
+                    update_req = message_pb2.updateReq()
+                    update_req.ParseFromString(bytes_rcvd)
+                    if update_req.subgraph_id == self.subgraph:
+                        self.handle_update(update_req)
                     if self.iterations == iters:
                         break
+                    iters += 1
+                except zmq.ZMQError as e:
+                    if e.errno == zmq.EAGAIN:
+                        self.logger.info("No message yet.")
 
+             
             self.logger.info("PeerNode::event_loop - out of the event loop")
         except Exception as e:
             raise e
@@ -137,6 +146,17 @@ class PeerNode():
 
         except Exception as e:
             raise e
+        
+    def output(self):
+        self.logger.info("PeerNode::output")
+        result = {}
+
+        for value in self.document_graph.values():
+            result[value.name] = value.page_rank
+
+
+        with open(f"{self.folder}/{self.subgraph}.json", "w") as f:
+            json.dump(result, f, indent=4)
 
 def parse():
     parser = argparse.ArgumentParser(
@@ -145,9 +165,11 @@ def parse():
     parser.add_argument("-s", "--subgraph", type=int,
                         default=1, help="What index subgraph is this?")
 
+    parser.add_argument("-fo", "--folder", type=str,
+                        default="P2P_results", help="Folder output")
                         
     parser.add_argument("-it", "--iterations", type=int,
-                        default=10, help="Number of pagerank iterations to run")
+                        default=1000, help="Number of pagerank iterations to run")
 
     parser.add_argument("-f", "--file_name", type=str,
                         default="graph.json", help="File name input for graph of a peer")
@@ -155,7 +177,7 @@ def parse():
     parser.add_argument("-sf", "--subgraph_file", type=str,
                         default="subgraph.json", help="Mapping of subgraph location to IP address")
     
-    parser.add_argument("-e", "--epsilon", type=int,
+    parser.add_argument("-e", "--epsilon", type=float,
                         default=0.0001, help="Some error threshold for the pagerank")
     
     parser.add_argument("-d", "--damping", type=float,
@@ -167,7 +189,7 @@ def parse():
     parser.add_argument("-p", "--port", type=int, default=5577,
                         help="Port number on which our underlying ZMQ rep socket runs, default=5577")
 
-    parser.add_argument("-l", "--loglevel", type=int, default=logging.DEBUG, choices=[
+    parser.add_argument("-l", "--loglevel", type=int, default=logging.INFO, choices=[
                         logging.DEBUG, logging.INFO, logging.WARNING, logging.ERROR, logging.CRITICAL], help="logging level, choices 10,20,30,40,50: default 20=logging.INFO")
 
     return parser.parse_args()
@@ -183,6 +205,7 @@ def main():
 
         solver = PeerNode(args, logger)
         solver.driver()
+        solver.output()
 
     except Exception as e:
         print("Exception caught in main - {}".format(e))

@@ -28,7 +28,7 @@ def parse():
     parser.add_argument("-it", "--iterations", type=int,
                         default=10, help="Number of pagerank iterations to run")
 
-    parser.add_argument("-e", "--epsilon", type=int,
+    parser.add_argument("-e", "--epsilon", type=float,
                         default=0.0001, help="Some error threshold for the pagerank")
 
     parser.add_argument("-d", "--damping", type=float,
