@@ -1,0 +1,1075 @@
+[
+    {
+        "name": "Node_0",
+        "inward_links": [
+            "Node_4",
+            "Node_15",
+            "Node_24",
+            "Node_43"
+        ],
+        "outward_links": [
+            "Node_28",
+            "Node_29",
+            "Node_3",
+            "Node_25",
+            "Node_38"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_1",
+            "Doc_164",
+            "Doc_47",
+            "Doc_130"
+        ]
+    },
+    {
+        "name": "Node_1",
+        "inward_links": [],
+        "outward_links": [],
+        "subgraph": 1,
+        "docs": [
+            "Doc_48",
+            "Doc_33",
+            "Doc_113",
+            "Doc_118"
+        ]
+    },
+    {
+        "name": "Node_2",
+        "inward_links": [
+            "Node_7",
+            "Node_12",
+            "Node_26",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_13"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_36",
+            "Doc_25",
+            "Doc_107",
+            "Doc_7"
+        ]
+    },
+    {
+        "name": "Node_3",
+        "inward_links": [
+            "Node_32",
+            "Node_22",
+            "Node_0"
+        ],
+        "outward_links": [
+            "Node_20",
+            "Node_38"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_155",
+            "Doc_184",
+            "Doc_174",
+            "Doc_181"
+        ]
+    },
+    {
+        "name": "Node_4",
+        "inward_links": [
+            "Node_47",
+            "Node_36",
+            "Node_33",
+            "Node_49",
+            "Node_15",
+            "Node_13",
+            "Node_26"
+        ],
+        "outward_links": [
+            "Node_0",
+            "Node_31",
+            "Node_20"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_127",
+            "Doc_50",
+            "Doc_129",
+            "Doc_88"
+        ]
+    },
+    {
+        "name": "Node_5",
+        "inward_links": [
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_28"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_0",
+            "Doc_111",
+            "Doc_167",
+            "Doc_150"
+        ]
+    },
+    {
+        "name": "Node_6",
+        "inward_links": [
+            "Node_23",
+            "Node_13",
+            "Node_27",
+            "Node_37",
+            "Node_32",
+            "Node_39",
+            "Node_49",
+            "Node_46",
+            "Node_14",
+            "Node_36"
+        ],
+        "outward_links": [
+            "Node_44",
+            "Node_7"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_46",
+            "Doc_141",
+            "Doc_24",
+            "Doc_90"
+        ]
+    },
+    {
+        "name": "Node_7",
+        "inward_links": [
+            "Node_17",
+            "Node_44",
+            "Node_6"
+        ],
+        "outward_links": [
+            "Node_2",
+            "Node_11",
+            "Node_8",
+            "Node_28"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_39",
+            "Doc_185",
+            "Doc_187",
+            "Doc_175"
+        ]
+    },
+    {
+        "name": "Node_8",
+        "inward_links": [
+            "Node_7",
+            "Node_11",
+            "Node_26",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_13",
+            "Node_42"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_154",
+            "Doc_139",
+            "Doc_100",
+            "Doc_95"
+        ]
+    },
+    {
+        "name": "Node_9",
+        "inward_links": [
+            "Node_32",
+            "Node_14",
+            "Node_26"
+        ],
+        "outward_links": [
+            "Node_32",
+            "Node_19",
+            "Node_28",
+            "Node_29",
+            "Node_36",
+            "Node_47",
+            "Node_49"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_133",
+            "Doc_71",
+            "Doc_121",
+            "Doc_37"
+        ]
+    },
+    {
+        "name": "Node_10",
+        "inward_links": [
+            "Node_32",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_48",
+            "Node_13",
+            "Node_26",
+            "Node_35",
+            "Node_43"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_92",
+            "Doc_76",
+            "Doc_179",
+            "Doc_81"
+        ]
+    },
+    {
+        "name": "Node_11",
+        "inward_links": [
+            "Node_7",
+            "Node_20"
+        ],
+        "outward_links": [
+            "Node_39",
+            "Node_8",
+            "Node_38",
+            "Node_43",
+            "Node_48"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_40",
+            "Doc_70",
+            "Doc_94",
+            "Doc_153"
+        ]
+    },
+    {
+        "name": "Node_12",
+        "inward_links": [
+            "Node_21",
+            "Node_25",
+            "Node_30",
+            "Node_13",
+            "Node_17"
+        ],
+        "outward_links": [
+            "Node_2",
+            "Node_15",
+            "Node_18",
+            "Node_28",
+            "Node_32",
+            "Node_38"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_21",
+            "Doc_193",
+            "Doc_87",
+            "Doc_59"
+        ]
+    },
+    {
+        "name": "Node_13",
+        "inward_links": [
+            "Node_2",
+            "Node_8",
+            "Node_48",
+            "Node_10",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_4",
+            "Node_6",
+            "Node_12",
+            "Node_41",
+            "Node_46"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_69",
+            "Doc_126",
+            "Doc_147",
+            "Doc_143"
+        ]
+    },
+    {
+        "name": "Node_14",
+        "inward_links": [
+            "Node_30"
+        ],
+        "outward_links": [
+            "Node_6",
+            "Node_9",
+            "Node_18",
+            "Node_43",
+            "Node_45"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_68",
+            "Doc_188",
+            "Doc_62",
+            "Doc_159"
+        ]
+    },
+    {
+        "name": "Node_15",
+        "inward_links": [
+            "Node_35",
+            "Node_12",
+            "Node_18",
+            "Node_26",
+            "Node_40"
+        ],
+        "outward_links": [
+            "Node_0",
+            "Node_4",
+            "Node_47"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_119",
+            "Doc_5",
+            "Doc_60",
+            "Doc_28"
+        ]
+    },
+    {
+        "name": "Node_16",
+        "inward_links": [
+            "Node_19",
+            "Node_36",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_39",
+            "Node_28",
+            "Node_18"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_102",
+            "Doc_112",
+            "Doc_178",
+            "Doc_128"
+        ]
+    },
+    {
+        "name": "Node_17",
+        "inward_links": [
+            "Node_43"
+        ],
+        "outward_links": [
+            "Node_7",
+            "Node_12",
+            "Node_27",
+            "Node_42"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_131",
+            "Doc_106",
+            "Doc_13",
+            "Doc_108"
+        ]
+    },
+    {
+        "name": "Node_18",
+        "inward_links": [
+            "Node_16",
+            "Node_49",
+            "Node_23",
+            "Node_43",
+            "Node_42",
+            "Node_33",
+            "Node_38",
+            "Node_14",
+            "Node_12",
+            "Node_19"
+        ],
+        "outward_links": [
+            "Node_15",
+            "Node_34"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_99",
+            "Doc_123",
+            "Doc_148",
+            "Doc_78"
+        ]
+    },
+    {
+        "name": "Node_19",
+        "inward_links": [
+            "Node_9",
+            "Node_42",
+            "Node_29",
+            "Node_41",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_16",
+            "Node_18",
+            "Node_44"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_63",
+            "Doc_53",
+            "Doc_146",
+            "Doc_171"
+        ]
+    },
+    {
+        "name": "Node_20",
+        "inward_links": [
+            "Node_3",
+            "Node_4"
+        ],
+        "outward_links": [
+            "Node_11",
+            "Node_47"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_29",
+            "Doc_176",
+            "Doc_17",
+            "Doc_11"
+        ]
+    },
+    {
+        "name": "Node_21",
+        "inward_links": [
+            "Node_45",
+            "Node_28",
+            "Node_40"
+        ],
+        "outward_links": [
+            "Node_12",
+            "Node_38",
+            "Node_39",
+            "Node_45"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_177",
+            "Doc_183",
+            "Doc_12",
+            "Doc_14"
+        ]
+    },
+    {
+        "name": "Node_22",
+        "inward_links": [
+            "Node_27",
+            "Node_39",
+            "Node_40"
+        ],
+        "outward_links": [
+            "Node_3",
+            "Node_34"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_32",
+            "Doc_173",
+            "Doc_3",
+            "Doc_125"
+        ]
+    },
+    {
+        "name": "Node_23",
+        "inward_links": [
+            "Node_26",
+            "Node_29"
+        ],
+        "outward_links": [
+            "Node_6",
+            "Node_18",
+            "Node_33"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_169",
+            "Doc_34",
+            "Doc_79",
+            "Doc_49"
+        ]
+    },
+    {
+        "name": "Node_24",
+        "inward_links": [
+            "Node_35",
+            "Node_28",
+            "Node_36"
+        ],
+        "outward_links": [
+            "Node_0",
+            "Node_28",
+            "Node_38"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_98",
+            "Doc_160",
+            "Doc_134",
+            "Doc_56"
+        ]
+    },
+    {
+        "name": "Node_25",
+        "inward_links": [
+            "Node_45",
+            "Node_0",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_12",
+            "Node_28",
+            "Node_38"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_58",
+            "Doc_57",
+            "Doc_77",
+            "Doc_140"
+        ]
+    },
+    {
+        "name": "Node_26",
+        "inward_links": [
+            "Node_10",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_47",
+            "Node_46",
+            "Node_23",
+            "Node_2",
+            "Node_33",
+            "Node_8",
+            "Node_9",
+            "Node_4",
+            "Node_45",
+            "Node_32",
+            "Node_15"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_30",
+            "Doc_156",
+            "Doc_15",
+            "Doc_162"
+        ]
+    },
+    {
+        "name": "Node_27",
+        "inward_links": [
+            "Node_17"
+        ],
+        "outward_links": [
+            "Node_6",
+            "Node_22"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_194",
+            "Doc_117",
+            "Doc_80",
+            "Doc_43"
+        ]
+    },
+    {
+        "name": "Node_28",
+        "inward_links": [
+            "Node_0",
+            "Node_16",
+            "Node_38",
+            "Node_24",
+            "Node_25",
+            "Node_41",
+            "Node_36",
+            "Node_7",
+            "Node_9",
+            "Node_5",
+            "Node_12",
+            "Node_33",
+            "Node_32"
+        ],
+        "outward_links": [
+            "Node_21",
+            "Node_24"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_84",
+            "Doc_52",
+            "Doc_168",
+            "Doc_26"
+        ]
+    },
+    {
+        "name": "Node_29",
+        "inward_links": [
+            "Node_0",
+            "Node_9",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_19",
+            "Node_23"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_85",
+            "Doc_136",
+            "Doc_124",
+            "Doc_145"
+        ]
+    },
+    {
+        "name": "Node_30",
+        "inward_links": [
+            "Node_37",
+            "Node_34",
+            "Node_41"
+        ],
+        "outward_links": [
+            "Node_12",
+            "Node_14",
+            "Node_38"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_151",
+            "Doc_190",
+            "Doc_195",
+            "Doc_114"
+        ]
+    },
+    {
+        "name": "Node_31",
+        "inward_links": [
+            "Node_4",
+            "Node_44",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_49",
+            "Node_40"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_103",
+            "Doc_120",
+            "Doc_42",
+            "Doc_138"
+        ]
+    },
+    {
+        "name": "Node_32",
+        "inward_links": [
+            "Node_9",
+            "Node_26",
+            "Node_12"
+        ],
+        "outward_links": [
+            "Node_3",
+            "Node_6",
+            "Node_9",
+            "Node_10",
+            "Node_28",
+            "Node_45",
+            "Node_48"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_22",
+            "Doc_41",
+            "Doc_186",
+            "Doc_86"
+        ]
+    },
+    {
+        "name": "Node_33",
+        "inward_links": [
+            "Node_26",
+            "Node_23",
+            "Node_46",
+            "Node_49"
+        ],
+        "outward_links": [
+            "Node_4",
+            "Node_18",
+            "Node_28",
+            "Node_38"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_35",
+            "Doc_135",
+            "Doc_91",
+            "Doc_104"
+        ]
+    },
+    {
+        "name": "Node_34",
+        "inward_links": [
+            "Node_22",
+            "Node_18"
+        ],
+        "outward_links": [
+            "Node_30",
+            "Node_48",
+            "Node_47"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_196",
+            "Doc_38",
+            "Doc_10",
+            "Doc_149"
+        ]
+    },
+    {
+        "name": "Node_35",
+        "inward_links": [
+            "Node_10",
+            "Node_38"
+        ],
+        "outward_links": [
+            "Node_15",
+            "Node_24",
+            "Node_43"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_161",
+            "Doc_6",
+            "Doc_44",
+            "Doc_180"
+        ]
+    },
+    {
+        "name": "Node_36",
+        "inward_links": [
+            "Node_9"
+        ],
+        "outward_links": [
+            "Node_4",
+            "Node_28",
+            "Node_24",
+            "Node_16",
+            "Node_6",
+            "Node_46"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_82",
+            "Doc_61",
+            "Doc_101",
+            "Doc_9"
+        ]
+    },
+    {
+        "name": "Node_37",
+        "inward_links": [
+            "Node_46",
+            "Node_40"
+        ],
+        "outward_links": [
+            "Node_6",
+            "Node_30",
+            "Node_48"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_97",
+            "Doc_2",
+            "Doc_110",
+            "Doc_27"
+        ]
+    },
+    {
+        "name": "Node_38",
+        "inward_links": [
+            "Node_21",
+            "Node_3",
+            "Node_25",
+            "Node_0",
+            "Node_47",
+            "Node_33",
+            "Node_12",
+            "Node_30",
+            "Node_44",
+            "Node_11",
+            "Node_24",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_18",
+            "Node_28",
+            "Node_35"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_157",
+            "Doc_16",
+            "Doc_165",
+            "Doc_116"
+        ]
+    },
+    {
+        "name": "Node_39",
+        "inward_links": [
+            "Node_11",
+            "Node_16",
+            "Node_21",
+            "Node_46"
+        ],
+        "outward_links": [
+            "Node_6",
+            "Node_22",
+            "Node_47"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_166",
+            "Doc_8",
+            "Doc_83",
+            "Doc_20"
+        ]
+    },
+    {
+        "name": "Node_40",
+        "inward_links": [
+            "Node_31",
+            "Node_46",
+            "Node_49"
+        ],
+        "outward_links": [
+            "Node_22",
+            "Node_37",
+            "Node_15",
+            "Node_21",
+            "Node_43"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_31",
+            "Doc_18",
+            "Doc_197",
+            "Doc_96"
+        ]
+    },
+    {
+        "name": "Node_41",
+        "inward_links": [
+            "Node_13",
+            "Node_49"
+        ],
+        "outward_links": [
+            "Node_28",
+            "Node_30",
+            "Node_19"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_189",
+            "Doc_65",
+            "Doc_142",
+            "Doc_45"
+        ]
+    },
+    {
+        "name": "Node_42",
+        "inward_links": [
+            "Node_17",
+            "Node_8"
+        ],
+        "outward_links": [
+            "Node_18",
+            "Node_19",
+            "Node_44"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_132",
+            "Doc_137",
+            "Doc_191",
+            "Doc_75"
+        ]
+    },
+    {
+        "name": "Node_43",
+        "inward_links": [
+            "Node_35",
+            "Node_10",
+            "Node_40",
+            "Node_47",
+            "Node_14",
+            "Node_11",
+            "Node_48",
+            "Node_45"
+        ],
+        "outward_links": [
+            "Node_17",
+            "Node_18",
+            "Node_0"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_158",
+            "Doc_109",
+            "Doc_23",
+            "Doc_170"
+        ]
+    },
+    {
+        "name": "Node_44",
+        "inward_links": [
+            "Node_6",
+            "Node_42",
+            "Node_19"
+        ],
+        "outward_links": [
+            "Node_7",
+            "Node_31",
+            "Node_38",
+            "Node_45"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_51",
+            "Doc_182",
+            "Doc_115",
+            "Doc_144"
+        ]
+    },
+    {
+        "name": "Node_45",
+        "inward_links": [
+            "Node_26",
+            "Node_21",
+            "Node_32",
+            "Node_14",
+            "Node_44"
+        ],
+        "outward_links": [
+            "Node_21",
+            "Node_25",
+            "Node_43"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_105",
+            "Doc_72",
+            "Doc_54",
+            "Doc_55"
+        ]
+    },
+    {
+        "name": "Node_46",
+        "inward_links": [
+            "Node_26",
+            "Node_36",
+            "Node_13"
+        ],
+        "outward_links": [
+            "Node_6",
+            "Node_10",
+            "Node_37",
+            "Node_16",
+            "Node_38",
+            "Node_40",
+            "Node_26",
+            "Node_29",
+            "Node_25",
+            "Node_19",
+            "Node_31",
+            "Node_39",
+            "Node_8",
+            "Node_33",
+            "Node_13",
+            "Node_5",
+            "Node_2"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_163",
+            "Doc_152",
+            "Doc_4",
+            "Doc_198"
+        ]
+    },
+    {
+        "name": "Node_47",
+        "inward_links": [
+            "Node_26",
+            "Node_20",
+            "Node_15",
+            "Node_39",
+            "Node_9",
+            "Node_34"
+        ],
+        "outward_links": [
+            "Node_4",
+            "Node_38",
+            "Node_43"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_64",
+            "Doc_67",
+            "Doc_93",
+            "Doc_172"
+        ]
+    },
+    {
+        "name": "Node_48",
+        "inward_links": [
+            "Node_10",
+            "Node_34",
+            "Node_32",
+            "Node_37",
+            "Node_11"
+        ],
+        "outward_links": [
+            "Node_13",
+            "Node_43"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_73",
+            "Doc_122",
+            "Doc_89",
+            "Doc_66"
+        ]
+    },
+    {
+        "name": "Node_49",
+        "inward_links": [
+            "Node_31",
+            "Node_9"
+        ],
+        "outward_links": [
+            "Node_4",
+            "Node_6",
+            "Node_18",
+            "Node_41",
+            "Node_40",
+            "Node_33"
+        ],
+        "subgraph": 1,
+        "docs": [
+            "Doc_192",
+            "Doc_19",
+            "Doc_74"
+        ]
+    }
+]
