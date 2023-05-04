@@ -26,7 +26,7 @@ def parse():
                         default=5577, help="Port to host the peer on")
 
     parser.add_argument("-it", "--iterations", type=int,
-                        default=10, help="Number of pagerank iterations to run")
+                        default=100, help="Number of pagerank iterations to run")
 
     parser.add_argument("-e", "--epsilon", type=float,
                         default=0.0001, help="Some error threshold for the pagerank")
